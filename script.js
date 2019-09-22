@@ -82,12 +82,14 @@ function manipulateTable(list){
         var cel_2 = new_row.insertCell(2);
         var cel_3 = new_row.insertCell(3);
         var cel_4 = new_row.insertCell(4);
+        var cel_5 = new_row.insertCell(5);
         
         cel_0.innerHTML = list[i]["DateTime"];
         cel_1.innerHTML = list[i]["FlocNo"]; 
         cel_2.innerHTML = list[i]["TemperatureC"];
         cel_3.innerHTML = list[i]["TemperatureF"]; 
         cel_4.innerHTML = list[i]["PH"];
+        cel_5.innerHTML = list[i]["WaterLavel"];
         
     }
 }
@@ -102,12 +104,14 @@ function searchResult(list, index)
     var cel_2 = new_row.insertCell(2);
     var cel_3 = new_row.insertCell(3);
     var cel_4 = new_row.insertCell(4);
+    var cel_5 = new_row.insertCell(5);
     
     cel_0.innerHTML = list[index]["DateTime"];
     cel_1.innerHTML = list[index]["FlocNo"]; 
     cel_2.innerHTML = list[index]["TemperatureC"];
     cel_3.innerHTML = list[index]["TemperatureF"]; 
     cel_4.innerHTML = list[index]["PH"];
+    cel_5.innerHTML = list[index]["WaterLavel"];
 }
 
 function clearTable(){
